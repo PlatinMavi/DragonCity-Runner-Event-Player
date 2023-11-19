@@ -1,8 +1,8 @@
 import cv2 as cv 
 import numpy as np
 
-threshold = .5
-upgrade_image = cv.imread("./trainobject/small.png", cv.IMREAD_COLOR)
+threshold = .6
+upgrade_image = cv.imread("./trainobject/heart.png", cv.IMREAD_COLOR)
 
 def detect(screenshot):
     result = cv.matchTemplate(screenshot, upgrade_image, cv.TM_CCOEFF_NORMED)
